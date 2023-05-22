@@ -1,0 +1,308 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: #F3F5FC;
+}
+
+/* alerta */
+.alert {
+    padding: 0.5%;
+    background-color: #f44336;
+    color: white;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+#logo {
+    
+    width: 100px; /* 5k */
+    height: 40px; /* 2k */
+    margin-top: 2%;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#txtInput {
+    position: absolute;
+    width: 40%;
+    height: 288px;
+    left: 10%;
+    top: 20%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border-style: none;
+    resize: none;
+}
+
+.output-container {
+    position: absolute;
+    width: 30%; /* 400px */
+    height: 86%;
+    top: 5%;
+    margin-left: 60%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#txtOutput {
+    width: 84%;
+    height: 68%;
+    margin-left: 8%;
+    margin-top: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    border-style: none;
+    resize: none;
+}
+
+.indicacion-container {
+    position: absolute;
+    width: 40%;
+    height: fit-content;
+    left: 10%;
+    top: 70%;
+} 
+
+.indicacion-container img, .indicacion-container p {
+    display: inline;
+}
+
+.indicacion-container img {
+    width: 11px;
+    height: 11px;
+}
+
+.indicacion-container p {
+    font-size: 1rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-style: italic;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    left: 10%;
+    top: 75%;
+}
+
+.button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 48%;
+    height: 100%;
+    border-radius: 24px;
+    transition: 0.5s;
+}
+
+.button-copy-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 80%;
+    height: 11.5%;
+    left: 10%;
+    top: 81%;
+}
+
+.button-copy {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    transition: 0.5s;
+}
+
+.button, .button-copy {
+    border: solid;
+    border-width: 0.15rem;
+    border-color: #0A3871;
+    color: #0A3871;
+}
+
+.button:hover, .button-copy:hover {
+    background: #0A3871;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    left: 38%;
+    top: 92%;
+}
+
+footer ul {
+    margin-top: 1rem;
+    list-style-type: none;
+    width: fit-content;
+    margin-left: 0;
+}
+
+footer li {
+    display: inline;
+    padding-left: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #495057;
+}
+
+footer a:hover {
+    color: #0A3871;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) and (max-height: 1384px) {
+
+    .alert {
+        padding: 3.0%;
+        font-size: 1.3rem;
+    }
+
+    .closebtn {
+        font-size: 2rem;
+        line-height: 20px;
+    }
+
+    #txtInput {
+        position: absolute;
+        width: 80%;
+        height: 45%;
+        left: 10%;
+        top: 20%;
+    }
+
+    .indicacion-container {
+        position: absolute;
+        width: 80%;
+        height: fit-content;
+        left: 10%;
+        top: 80%;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+        position: absolute;
+        width: 80%;
+        height: 10%;
+        left: 10%;
+        top: 85%;
+    }
+
+    .output-container {
+        position: absolute;
+        width: 80%;
+        height: 86%;
+        top: 105%;
+        margin-left: 10%;
+    }
+
+    footer {
+        left: 28%;
+        top: 200%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    footer {
+        left: 20%;
+        top: 200%;
+    }
+}
+
+@media screen and (max-width: 375px) and (max-height: 933px) {
+
+    .indicacion-container {
+        position: absolute;
+        width: 80%;
+        height: fit-content;
+        left: 10%;
+        top: 80%;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 0.9rem;
+
+        position: absolute;
+        width: 80%;
+        height: 20%;
+        left: 10%;
+        top: 85%;
+    }
+
+    .button {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }    
+
+    .output-container {
+        top: 110%;
+    }
+
+    footer {
+        left: 6%;
+        top: 200%;
+    }
+}
+
+
+
+
+  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="myAlert" class="alert">
+        <span class="closebtn" onclick="closeAlert()">&times;</span>
+        <strong>¡Alerta!</strong><span id="mensaje-error"></span> 
+    </div>
+
+    <main id="contenido">
+        <img id="logo" src="img/Logo.png" alt="Logo de Alura">
+        <textarea id="txtInput" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="output-container">
+            <textarea id="txtOutput" placeholder="Texto encriptado/desencriptado"></textarea>
+            <div class="button-copy-container">
+                <button id="btnCopiar" class="button-copy">Copiar</button>
+            </div>
+        </div>
+        <div class="indicacion-container">
+            <img src="img/bi_exclamation-circle-fill.png">
+            <p>Solo letras minúsculas y sin tildes</p>
+        </div>
+        <div class="button-container">
+            <button id="btnEncriptar" class="button">Encriptar</button>
+            <button id="btnDesencriptar" class="button">Desencriptar</button>
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <ul>
+            <li><a id="github" href="https://github.com/Solipsist17" target="_blank">Github</a></li>
+            <li><a id="linkedin" href="https://www.linkedin.com/in/freddy-sebasti%C3%A1n-v%C3%A1squez-puri-457326261/" target="_blank">LinkedIn</a></li>
+            <li><a id="email" href="mailto:sebas.17v@gmail.com" target="_blank">Email</a></li>
+        </ul> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
