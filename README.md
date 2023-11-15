@@ -1,4 +1,6 @@
 # challenge-alura
+![image](https://github.com/Solipsist17/challenge-alura/assets/123226619/a5c960fc-6acb-40e0-85d7-792025e3237c)
+
 El challenge de encriptador de texto de alura latam.
 
 Para la realización de este challenge se contó con las siguientes indicaciones:
@@ -18,3 +20,4 @@ Para la realización de este challenge se contó con las siguientes indicaciones
 Ejemplo de la encriptación:
 "gato" => "gaitober"
 gaitober" => "gato"
+
